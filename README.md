@@ -35,10 +35,11 @@ NOTE: Add instructions about how to run the application.
 
 * Pay attention about how your code is organized.
 * How you are reflecting the domain in the code. Be careful with the separation of concerns between the UI and the business logic.
+* We would love to see the usage of the Software Design Patterns, SOLID principles and Clean Architectures.
+* We are not fanboys of frameworks/libraries but keep in mind that our front-end stack is based on React.js ;)
 * We love clean code.
 * We don't think 100% of code coverage is a must, but we love tests.
 * You are not intended to be proven as a designer. The provided mockups are just a guideline, feel free to build whatever you want.
-* We are not fanboys of frameworks/libraries but keep in mind that our front-end stack is based on React.js ;)
 * We are looking forward to seeing your code and discuss with you your solution.
 
 
