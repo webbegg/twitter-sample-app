@@ -1,44 +1,38 @@
-# WebTwitter
+# Twitter sample app
 
 ![View the wall](resources/screenshot.png)
 
-Implement a web-based social networking application (similar to Twitter) satisfying the scenarios below.
+## Live site demo
 
-<h2>Scenarios</h2>
+[https://twitter-sample-app.netlify.app/](https://twitter-sample-app.netlify.app/)
 
-<h3>Viewing the wall</h3>
- 
-![View the wall](resources/wall.png)
+## Instructions
 
-<h3>Viewing a user's timeline</h3>
- 
-![View Timeline](resources/timeline.png)
+### Download repository
 
-<h3>Posting a message</h3>
- 
-![Post a message](resources/post.png)
+```bash
+git clone https://github.com/webbegg/twitter-sample-app
+```
 
-<h3>Following a new user</h3>
+### Install dependencies
 
-![Follow](resources/follow.png)
+```bash
+cd twitter-sample-app
+yarn # or npm install
+```
 
-<h2>Details</h2>
+### Run in dev mode
 
-- The main view should display an aggregated list of the users' posts that we are following, as known as the "wall".
-- Moreover, we should show a list of the currently followed users providing a link to each user's timeline ordered by posted date.
-- The user's timeline should only display the messages posted by the user ordered by posted date.
-- We need to build a new component that it provides the search and following capabilities for the new users.
-- Finally, we should be able to post messages in our timeline.
+```bash
+yarn start # or npm start
+```
 
-NOTE: Add instructions about how to run the application.
+## Run e2e tests
 
-<h2>What we are looking for: </h2>
+```bash
+yarn cypress:open # or npm run cypress:open
+```
 
-- Pay attention about how your code is organized.
-- How you are reflecting the domain in the code. Be careful with the separation of concerns between the UI and the business logic.
-- We would love to see the usage of the Software Design Patterns, SOLID principles and Clean Architectures.
-- We are not fanboys of frameworks/libraries but keep in mind that our front-end stack is based on React.js ;)
-- We love clean code.
-- We don't think 100% of code coverage is a must, but we love tests.
-- You are not intended to be proven as a designer. The provided mockups are just a guideline, feel free to build whatever you want.
-- We are looking forward to seeing your code and discuss with you your solution.
+## License
+
+MIT © [webbegg](https://github.com/webbegg)
