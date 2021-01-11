@@ -14,7 +14,7 @@ export const FollowingContainer = ({ followers }) => {
   }
 
   return (
-    <Panel>
+    <Panel id="follows-list">
       <PanelTitle>Following ({followers?.length})</PanelTitle>
       <PanelContent>
         {followers?.length ? (

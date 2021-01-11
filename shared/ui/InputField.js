@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
-const InputField = ({ placeholder, value, onChange, onAction }) => {
+const InputField = ({ name, placeholder, value, onChange, onAction }) => {
   const onChangeHandle = ({ currentTarget }) => {
     onChange(currentTarget.value)
   }
 
   const keyDownHandle = ({ key }) => {
     if (key === 'Enter') {
-      onAction(value)
+      onAction && onAction(value)
     } else if (key === 'Escape') {
       onChange('')
     }
@@ -17,6 +17,8 @@ const InputField = ({ placeholder, value, onChange, onAction }) => {
     <Container>
       <Input
         type="text"
+        id={name}
+        name={name}
         placeholder={placeholder}
         value={value}
         onChange={onChangeHandle}

@@ -25,7 +25,7 @@ export const UsersContainer = ({ users }) => {
   }
 
   return (
-    <Panel>
+    <Panel id="users-list">
       <InputField
         value={filter}
         placeholder="Search users to follow ..."

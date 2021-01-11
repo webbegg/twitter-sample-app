@@ -27,7 +27,7 @@ export const AddTweet = () => {
   }
 
   return (
-    <Container>
+    <Container id="add-tweet">
       <InputField
         value={tweet}
         placeholder="Whats happening?"

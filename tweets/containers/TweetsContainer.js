@@ -56,16 +56,16 @@ const TweetsContainer = () => {
 
   return (
     <Container onKeyDown={keyDownHandle} tabIndex="0">
-      <LeftPanel>
+      <LeftPanel id="profile-panel">
         <UserProfile user={profile}>
           <IconButton onClick={showUserProfile}>
             <ProfileIcon />
           </IconButton>
         </UserProfile>
-        <FollowingContainer followers={follows} />
+        <FollowingContainer id="follows-list" followers={follows} />
         <UsersContainer users={availableUsers} />
       </LeftPanel>
-      <RightPanel>
+      <RightPanel id="tweets-list">
         <UserProfile user={currentUser}>
           {!isUserProfileSelected && (
             <IconButton onClick={unfollowUserHandle}>
