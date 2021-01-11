@@ -23,11 +23,16 @@ const TweetsContainer = () => {
   const [availableUsers, setAvailableUsers] = useState([])
 
   useEffect(() => {
-    setFollows(users.filter(({ id }) => profile.follows.includes(id)))
+    setFollows(
+      users
+        .filter(({ id }) => profile.follows.includes(id))
+        .sort((a, b) => a.name.localeCompare(b.name))
+    )
+
     setAvailableUsers(
-      users.filter(
-        ({ id }) => profile.id !== id && !profile.follows.includes(id)
-      )
+      users
+        .filter(({ id }) => profile.id !== id && !profile.follows.includes(id))
+        .sort((a, b) => a.name.localeCompare(b.name))
     )
   }, [profile.follows])
 

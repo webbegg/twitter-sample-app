@@ -1,3 +1,5 @@
+import { FollowIcon } from 'shared/icons/FollowIcon'
+import { IconButton } from 'shared/ui/IconButton'
 import styled from 'styled-components'
 import { slug } from 'utils/strings'
 
@@ -39,6 +41,7 @@ const Container = styled.div`
 
 const UserDetails = styled.div`
   display: flex;
+  flex: 1;
   flex-direction: column;
   margin-left: 0.62rem;
 `
